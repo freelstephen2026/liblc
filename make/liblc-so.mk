@@ -6,4 +6,4 @@ FLAGS=-nostdlib
 all: $(BUILD) $(OBJ)
 
 $(BUILD): $(OBJ)
-	$(CC) -o $@ -flags $^
+	$(CC) -o $@ $(FLAGS) $^
