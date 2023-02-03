@@ -1,9 +1,10 @@
 CC=gcc
-FLAGS=-nostdlib
+INCLUDE=-Iinclude
+FLAGS=-nostdlib $(INCLUDE)
 SRC=src/stdio/stdio.c
 OBJ=build/obj/stdio.o
 
 all: $(OBJ)
 
 $(OBJ): $(SRC)
-	$(SRC) -o $@ -c $^
+	$(SRC) -o $@ $(FLAGS) -c $^
