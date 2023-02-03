@@ -1,4 +1,3 @@
-cd glibc
 git pull
 git init
 git add .
