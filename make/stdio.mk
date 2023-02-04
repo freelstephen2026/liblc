@@ -4,7 +4,7 @@ FLAGS=-nostdlib $(INCLUDE)
 SRC=src/stdio/stdio.c
 OBJ=build/obj/stdio.o
 
-all: $(OBJ)
+all: $(OBJ) $(SRC)
 
 $(OBJ): $(SRC)
-	$(SRC) -o $@ $(FLAGS) -c $^
+	$(CC) -o $@ $(FLAGS) -c $^

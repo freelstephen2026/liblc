@@ -6,7 +6,7 @@
 struct _IO_marker
 {
     struct _IO_marker *_next;
-    FILE *_sbuf;
+    struct _IO_FILE *_sbuf;
      /* If _pos >= 0
      it points to _buf->Gbase()+_pos. FIXME comment */
     /* if _pos < 0, it points to _buf->eBptr()+_pos. FIXME comment */

@@ -6,8 +6,8 @@
 
 FILE *fopen(char*, char*);
 
-FILE *stdin = fopen("/dev/stdin", "r");
-FILE *stdout = fopen("/dev/stdout", "w");
-FILE *stderr = fopen("/dev/stderr", "w");
+extern FILE *stdin;
+extern FILE *stdout;
+extern FILE *stderr;
 
 #endif /* _STDIO_H */

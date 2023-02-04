@@ -3,4 +3,4 @@
 
 #define NULL	((void*)0)
 
-#else _STDDEF_H
+#endif /* _STDDEF_H */
